@@ -12,6 +12,114 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Login-page specific */
+
+body.loginpage{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#0C90AD;
+}
+
+
+.container {
+	width: 580px;
+	margin:7% auto;
+	border-radius: 75px;
+    background-color: white;
+	box-shadow: 0 0 17px #333;
+}
+
+.header {
+	text-align: center;
+	padding-top: 75px;
+}
+
+.header h1 {
+	color: #333;
+	font-size: 45px;
+	margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.main {
+	text-align: center;
+}
+
+.main input, button {
+	width: 300px;
+	height: 40px;
+	border:solid 2px #222;
+	outline: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 40px;
+}
+
+.main button {
+	padding-left: 0;
+	background-color: #0C90AD;
+	letter-spacing: 1px;
+    font-size: 20px;
+	margin-bottom: 70px;
+    border: none;
+    border-radius: 50%;
+    width: 160px;
+    height: 50px;
+    color: white;
+}
+
+.main button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #326674;
+}
+.main input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+}
+
+.main span {
+	position: relative;
+}
+
+
+.main i {
+	position: absolute;
+	left: 15px;
+	color: #333;
+	font-size: 16px;
+	top: 2px;
+}
+
+.ForgotPassword{
+    color:red;
+    display: flex;
+    padding-right: 80px;
+    justify-content:flex-end;
+}
+
+.header2-login{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 25px;
+    background-color: #0C90AD;
+    color: white;
+}
+
+
+.header2-login ul{
+    list-style: none;
+    display: flex;
+}
+
+.header2-login li{
+    margin: 0px 5px;
+}
+
+
+
+/* Index page specicific below */
 
 /* Picture (Start) */
 .indexpic{
@@ -95,6 +203,7 @@ a, a:hover{
     background-color: whitesmoke;
 }
 
+
 .header2 ul{
     list-style: none;
     display: flex;
@@ -162,7 +271,9 @@ nav a:hover{
     font-size: 30px;
     display: none;
 }
+/* Navbar code below  (End)*/
 
+/* Making it rresponsive  */
 @media  screen and (max-width:600px){
     nav{
         display: block;
@@ -184,6 +295,22 @@ nav a:hover{
         top: 15px;
         right: 20px;
     }
+
+    /* for loginpage */
+
+    .container {
+        width: 400px;
+        margin:7% auto;
+        border-radius: 75px;
+        background-color: white;
+        box-shadow: 0 0 17px #333;
+    }
+
+    .ForgotPassword{
+        color:red;
+        display: flex;
+        padding-right: 10px;
+        justify-content:flex-end;
+    }
 }
 
-/* Navbar code below  (End)*/
