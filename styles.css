@@ -384,7 +384,7 @@ nav a:hover{
     }
     
     .searchbox input[type="search"]{
-        width:60%;
+        width:50%;
         height: 50px;
         border: none;
         outline: none;
