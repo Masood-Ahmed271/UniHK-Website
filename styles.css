@@ -369,7 +369,7 @@ nav a:hover{
     /* for loginpage */
 
     .container {
-        width: 400px;
+        width: 350px;
         margin:7% auto;
         border-radius: 75px;
         background-color: white;
@@ -384,7 +384,7 @@ nav a:hover{
     }
     
     .searchbox input[type="search"]{
-        width:65%;
+        width:60%;
         height: 50px;
         border: none;
         outline: none;
