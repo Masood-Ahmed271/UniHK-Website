@@ -1,0 +1,209 @@
+<!-- Author: Masood Ahmed -->
+<!-- Project Name: UniHK App -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS- Stylesheet ======== -->
+    <link rel="stylesheet" href="styles2.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>UniHK App - Dashboard</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="./Images/UniHK_Logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">UniHK App</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="./Dashboard.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-paper-plane icon' ></i>
+                            <span class="text nav-text" >Application</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-graduation icon' style="color:black;"></i>
+                            <span class="text nav-text" style="color:black;">College Search</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-list-ol icon' ></i>
+                            <span class="text nav-text">My College List</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Financial Aid</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content" onclick="logout()">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+
+        <div class="header2">
+            <ul>
+                <!-- With backend setup, change the variables -->
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;Welcome! Masood Ahmed <br> mangimasood2000@gmail.com</li>
+            </ul>
+            <!-- <button class="Log-Out">
+                Log Out
+            </button> -->
+        </div>
+
+        <div class="searchbox">
+            <form class="search-form">
+                <input type="search" name="searchbox" placeholder="Search for Universities" class="searchinput">
+                <input type="submit" value="&#128269;" name="Submit Button" class="searchinput">
+            </form>
+        </div>
+        <br> <br>
+        
+        <br>
+        <br>
+
+<!-- Inserting the cards-->
+
+<div class="wrapper">
+
+	<div class="cards_wrap">
+        <a href="https://hkust.edu.hk/home" class="card_item">
+			<div class="card_inner">
+				<img src="./Images/HKUST_Logo.png">
+				<div class="University-Name">The Hong Kong University of Science and Technology</div>
+                <button class="Log-Out">Close</button>
+			</div>
+        </a>
+        <a href="https://www.hku.hk/" class="card_item">
+			<div class="card_inner">
+				<img src="./Images/HKU_Logo.png">
+				<div class="University-Name">The University of Hong Kong.</div>
+                <button class="Log-Out">Close</button>
+			</div>
+        </a>
+        <a href="https://www.cuhk.edu.hk/english/index.html" class="card_item">
+			<div class="card_inner">
+				<img src="./Images/CUHK_Logo.png">
+				<div class="University-Name">Chinese University of Hong Kong</div>
+                <button class="Log-Out">Close</button>
+			</div>
+        </a>
+        <a href="https://www.polyu.edu.hk/en/" class="card_item">
+			<div class="card_inner">
+				<img src="./Images/Polyu_Logo.png">
+				<div class="University-Name">The Hong Kong Polytechnic University</div>
+                <button class="Log-Out">Close</button>
+			</div>
+        </a>
+        <a href="https://www.cityu.edu.hk/" class="card_item">
+			<div class="card_inner">
+				<img src="./Images/CityU_Logo.png">
+				<div class="University-Name">City University of Hong Kong</div>
+                <button class="Log-Out">Close</button>
+			</div>
+        </a>
+        <a href="https://www.hkbu.edu.hk/eng/main/index.jsp" class="card_item">
+			<div class="card_inner">
+				<img src="./Images/HKBU_Logo.png">
+				<div class="University-Name">Hong Kong Baptist University</div>
+                <button class="Log-Out">Close</button>
+			</div>
+        </a>
+	</div>
+</div>  
+
+
+<br>
+
+<!-- Inserting cards (End)-->
+
+         <!-- Creating a footer (Start)-->
+        <div class="footer-container">
+            <ul class="footer-list">
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <p class="copyright">
+                UniHK &copy; 2022
+            </p>
+        </div>
+         <!-- Creating a footer (End)-->
+    </section>
+
+    <script>
+    const body = document.querySelector('body'),
+    sidebar = body.querySelector('nav'),
+    toggle = body.querySelector(".toggle"),
+    modeSwitch = body.querySelector(".toggle-switch"),
+    modeText = body.querySelector(".mode-text"),
+    searchBox = document.getElementsByClassName("searchbox"),
+    searchForm = document.getElementsByClassName("search-form");
+
+
+    toggle.addEventListener("click" , () =>{
+        sidebar.classList.toggle("close");
+        // searchBox.removeChild(searchForm);
+        
+    })
+
+    function logout(){
+                    window.location.href = "index.html";
+            }
+   </script>
+
+
+
+
+
+
+</body>
+</html>
