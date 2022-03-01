@@ -56,7 +56,8 @@ body.loginpage{
 	text-align: center;
 }
 
-.main input, button {
+
+.inputboxes {
 	width: 300px;
 	height: 40px;
 	border:solid 2px #222;
@@ -68,7 +69,7 @@ body.loginpage{
 	margin-bottom: 40px;
 }
 
-.main button {
+.myButton {
 	padding-left: 0;
 	background-color: #0C90AD;
 	letter-spacing: 1px;
@@ -81,10 +82,11 @@ body.loginpage{
     color: white;
 }
 
-.main button:hover {
+.myButton:hover {
 	box-shadow: 2px 2px 5px #555;
 	background-color: #326674;
 }
+
 .main input:hover {
 	box-shadow: 2px 2px 5px #555;
 	background-color: #ddd;
@@ -154,6 +156,7 @@ body.loginpage{
 
 }
 
+/* Search box starts here */
 .searchbox{
     position: absolute;
     top:630px;
@@ -468,13 +471,14 @@ nav a:hover{
     
 }
 
+/* For making univeristy name cards responisve (start) */
 @media screen and (max-width: 1024px){
 	.cards_wrap .card_item{
 		width: 33%;
 	}
 }
 
-/* For making univeristy name cards responisve (start) */
+
 @media screen and (max-width: 768px){
 	.cards_wrap .card_item{
 		width: 50%;
