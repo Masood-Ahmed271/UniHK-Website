@@ -17,6 +17,19 @@
     <!-- Anotherstylesheet -->
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
     <title>UniHK App - Login</title>
+    <script>
+        function login(){
+            let email = document.getElementById("email");
+            let password = document.getElementById("password");
+            if (email.value == "mangimasood2000@gmail.com" && password.value=="1234check"){
+                window.location.href = "Dashboard.html";
+            }
+            else{
+                alert("Wrong Credentials");
+            }
+        }
+    </script>
+
 </head>
 <body class="loginpage">
     <!-- Creating header for the website (Start) -->
@@ -71,19 +84,18 @@
             <p></p><span style="color:red;">* </span>Indicates Required Fields</p>
         </div>
         <div class="main">
-            <form>
+            <form name="myForm" method="post">
                 <span>
                     Email <span style="color:red;">* </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" placeholder="Email" name="email">
+                    <input class="inputboxes" type="text" placeholder="Email" name="email" id="email">
                 </span><br>
                 <span>
                     Password <span style="color:red;">* </span>
-                    <input type="password" placeholder="Password" name="password">
+                    <input class="inputboxes" type="password" placeholder="Password" name="password" id="password">
                 </span><br>
                 <a href="#" class="ForgotPassword">Forgot Password?</a><br>
-                    <button>Sign In</button>
-                
-   
+                <input class="myButton" type="button" value="Sign In" onclick="login();"/>
+                    <!-- <button onclick="login()">Sign In</button> -->
             </form>
         </div>
     </div>
