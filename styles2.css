@@ -529,8 +529,10 @@ a, a:hover{
         height: 250px;
     }
 
-    .home{
-        height: 580vh;
+	.sidebar.close ~ .home{
+        left: 78px;
+        height: 380vh;
+        width: calc(100% - 78px);
     }
 }
 
