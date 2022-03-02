@@ -524,7 +524,7 @@ a, a:hover{
 /* For making univeristy name cards responisve (end) */
 
 /* especiallyy for mobile devices */
-@media screen and (max-width: 568px){
+@media screen and (max-width: 480px){
 	.banner{
         height: 250px;
     }
