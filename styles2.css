@@ -534,5 +534,9 @@ a, a:hover{
         height: 480vh;
         width: calc(100% - 78px);
     }
+	
+    .home{
+        height: 480vh;
+    }
 }
 
