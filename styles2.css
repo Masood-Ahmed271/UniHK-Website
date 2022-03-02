@@ -523,3 +523,14 @@ a, a:hover{
 
 /* For making univeristy name cards responisve (end) */
 
+/* especiallyy for mobile devices */
+@media screen and (max-width: 568px){
+	.banner{
+        height: 250px;
+    }
+
+    .home{
+        height: 280vh;
+    }
+}
+
