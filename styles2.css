@@ -531,7 +531,7 @@ a, a:hover{
 
 	.sidebar.close ~ .home{
         left: 78px;
-        height: 380vh;
+        height: 480vh;
         width: calc(100% - 78px);
     }
 }
