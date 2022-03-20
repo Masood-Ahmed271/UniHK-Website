@@ -145,7 +145,7 @@ body.loginpage{
     height: 500px;
     display: flex;
     align-items: center;
-    background: url(./Images/searchpage.png) no-repeat;
+    background: url(../Images/searchpage.png) no-repeat;
     image-rendering: crisp-edges;
     image-rendering: -moz-crisp-edges;          /* Firefox */
     image-rendering: -o-crisp-edges;            /* Opera */
@@ -273,7 +273,7 @@ body.loginpage{
     height: 500px;
     display: flex;
     align-items: center;
-    background: url(./Images/Index_Page_Picture.png) no-repeat;
+    background: url(../Images/Index_Page_Picture.png) no-repeat;
     background-size: cover;
     background-position: center;
 

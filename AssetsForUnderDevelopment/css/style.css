@@ -1,0 +1,69 @@
+﻿
+/* =============================================================
+   GENERAL STYLES
+    ============================================================ */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    font-weight:400;
+}
+
+
+/* Moving Icon Class Style */
+#movingicon {
+    margin-top:60px;
+    text-align:center;
+     vertical-align:central;
+    color:rgb(255, 153, 0);
+    font-weight:900;
+    font-size:80px;
+    letter-spacing:3px;
+}
+
+
+.icon-color{
+    color:rgba(247, 0, 0, 0.77);
+}
+
+/* =============================================================
+    BOOTSTRAP COMONETS STYLE CHANGES
+    ============================================================ */
+
+/* Navbar Style Change */
+
+.navbar-inverse {
+    background-color: rgba(52, 152, 219, 0.54);
+    border-color: transparent;
+}
+
+ .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+ }
+
+   .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+            color: #ffffff;
+ }
+
+
+ .navbar-inverse .navbar-brand {
+        color: #fff;
+ }
+.navbar-brand {
+    font-size:30px;
+    font-weight:900;
+}
+
+/* =============================================================
+  MEDIA QUERIES
+    ============================================================ */
+
+
+@media (max-width: 487px) {
+    #headLine {
+       font-size:40px;
+    }
+}
+
+
+
