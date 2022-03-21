@@ -14,6 +14,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- My Stylesheet -->
     <link rel="stylesheet" href="./Assets/Styles/styles.css">
+    <!-- Adding the main java script for processing certain events -->
+    <script type="text/Javascript" src="./Assets/Scripts/main.js"></script>
+    
     <title>UniHK App</title>
 </head>
 <body>
@@ -90,26 +93,4 @@
 
      <!-- Creating a footer (End)-->
 
-
-
-
-     <!-- Javascript to make the header responsive (Start) -->
-
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-   <script>
-       $(function(){
-           $(".toggle").on("click", function(){
-               if($(".menu").hasClass("active")){
-                   $(".menu").removeClass("active");
-                   $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
-               } else {
-                   $(".menu").addClass("active");
-                   $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
-               }
-           })
-       });
-   </script>
-
-   <!-- Javascript to make the header responsive (End) -->
 </body>

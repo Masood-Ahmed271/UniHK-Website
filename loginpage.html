@@ -16,19 +16,12 @@
     <link rel="stylesheet" href="./Assets/Styles/styles.css">
     <!-- Anotherstylesheet -->
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <!-- Adding the main java script for processing certain events -->
+    <script type="text/Javascript" src="./Assets/Scripts/main.js"></script>
+    <!-- Adding Jquery Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <title>UniHK App - Login</title>
-    <script>
-        function login(){
-            let email = document.getElementById("email");
-            let password = document.getElementById("password");
-            if (email.value == "mangimasood2000@gmail.com" && password.value=="1234check"){
-                window.location.href = "Dashboard.html";
-            }
-            else{
-                alert("Wrong Credentials");
-            }
-        }
-    </script>
 
 </head>
 <body class="loginpage">
@@ -55,27 +48,6 @@
     </nav>
  <br> <br> <br>
  
-     <!-- Creating header for the website (Start) -->
-
-     <!-- Javascript to make the header responsive (Start) -->
-
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-     <script>
-         $(function(){
-             $(".toggle").on("click", function(){
-                 if($(".menu").hasClass("active")){
-                     $(".menu").removeClass("active");
-                     $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
-                 } else {
-                     $(".menu").addClass("active");
-                     $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
-                 }
-             })
-         });
-     </script>
-  
-     <!-- Javascript to make the header responsive (End) -->
 
      <div class="container">
         <div class="header">

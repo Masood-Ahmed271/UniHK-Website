@@ -13,6 +13,9 @@
     
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Adding the main java script for processing certain events -->
+    <script type="text/Javascript" src="./Assets/Scripts/main.js"></script>
     
     <title>UniHK App - Dashboard</title> 
 </head>
@@ -123,28 +126,6 @@
         </div>
          <!-- Creating a footer (End)-->
     </section>
-
-    <script>
-        const body = document.querySelector('body'),
-        sidebar = body.querySelector('nav'),
-        toggle = body.querySelector(".toggle"),
-        modeSwitch = body.querySelector(".toggle-switch"),
-        modeText = body.querySelector(".mode-text");
-
-
-        toggle.addEventListener("click" , () =>{
-            sidebar.classList.toggle("close");
-        })
-
-        function logout(){
-                window.location.href = "index.html";
-        }
-
-    </script>
-
-
-
-
 
 
 </body>
